@@ -3,12 +3,6 @@ import random
 from math import * 
 from OpenGL.GL import *
 
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-
-SKY = (50, 100, 200)
-GROUND = (200, 200, 100)
-
 colors = [
   (0, 20, 10),
   (4, 91, 82),
@@ -16,6 +10,8 @@ colors = [
   (0, 0, 255),
   (255, 255, 255)
 ]
+SKY = (50, 100, 200)
+GROUND = (200, 200, 100)
 
 
 walls = {
@@ -25,6 +21,15 @@ walls = {
     "4": pygame.image.load('./Proyecto/wall4.png'),
     "5": pygame.image.load('./Proyecto/wall5.png'),
 }
+sprite1 = pygame.image.load('./Proyecto/spritte1.png')
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+
+
+
+
+
 
 class Raycaster(object):
     def __init__ (self, screen):
