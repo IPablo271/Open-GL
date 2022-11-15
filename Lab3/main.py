@@ -103,9 +103,6 @@ gameState[29,29] = 1
 
 
 
-
-
-
 while True:
     newGameState = np.copy(gameState)
     screen.fill(color)
